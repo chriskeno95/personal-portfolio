@@ -81,3 +81,100 @@ meter {
 :where([draggable="true"]) {
     -webkit-user-drag: element;
 }
+
+:root {
+    --primary-colour:hsl(30, 100%, 60%);
+    --secondary-colour:hsl(0, 17%, 98%);
+    --tertiary-colour:hsl(0, 1%, 15%);
+}
+body {
+    background-color: var(--tertiary-colour);
+}
+header{position: fixed;
+       top: 0; 
+       left: 0; 
+       z-index: 9999; 
+       width: 100%; height: 70px; 
+       background-color:var(--secondary-colour)
+    }
+
+nav {
+    color: var(--tertiary-colour);
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 1em;
+    margin: 0 1em;
+    
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2em;
+}
+nav ul li {
+    display:inline;
+    padding: 0 20px 0 0;
+
+}
+
+#background-img {
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/background-img.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.intro {
+    height: 80vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-around;
+    margin-bottom: 10em;
+}
+
+.intro h1 {
+    color: var(--secondary-colour);
+    font-size: 5.7em;
+
+}
+.intro p {
+    color: var(--primary-colour);
+    font-size: 1.6em;
+    line-height: 1.8em;
+    padding-top: 10px;
+}
+
+button {
+    background-color: var(--secondary-colour);
+    padding: .6em .8em;
+    border: solid 3px var(--primary-colour);
+    border-radius: 30px;
+    font-size: 1.5em;
+    color: var(--primary-colour);
+}
+
+html {
+    --scrollbarBG: var(--tertiary-colour);
+    --thumbBG:var(--primary-colour);
+  }
+  body::-webkit-scrollbar {
+    width: 4px;
+  }
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 9px;
+    border: 1px solid var(--scrollbarBG);
+  }
+  
