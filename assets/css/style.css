@@ -207,18 +207,24 @@ button {
     flex-basis: 55%;
 }
 .first {
-    background-image: url(../images/background-img.png);
+    background-image: url(../images/02-portfolio-1.jpg);
+    
 }
 .second {
-    background-image: url(../images/background-img.png);
+    background-image: url(../images/02-portfolio-2.jpg);
+
 }
 
 .third {
-    background-image: url(../images/background-img.png);
+    background-image: url(../images/02-portfolio-3.jpg);
 }
 .forth {
-    background-image: url(../images/background-img.png);
+    background-image: url(../images/02-portfolio-4.jpg);
 }
 .fifth {
-    background-image: url(../images/background-img.png);
+    background-image: url(../images/02-run-buddy.jpg);
 }
+.first, .second, .third, .forth, .fifth {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;}
