@@ -86,8 +86,28 @@ meter {
     --primary-colour:hsl(30, 100%, 60%);
     --secondary-colour:hsl(0, 17%, 98%);
     --tertiary-colour:hsl(0, 1%, 15%);
+    --background-colour:hsl(0, 3%, 23%);
 }
+html {
+    --scrollbarBG: var(--tertiary-colour);
+    --thumbBG:var(--primary-colour);
+  }
+  body::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 9px;
+    border: 1px solid var(--scrollbarBG);
+  }
+
 body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
     background-color: var(--tertiary-colour);
 }
 header{position: fixed;
@@ -119,7 +139,7 @@ nav ul li {
 }
 
 #background-img {
-    position: absolute;
+    position: fixed;
     z-index: -1;
     height: 100vh;
     width: 100%;
@@ -158,23 +178,47 @@ button {
     color: var(--primary-colour);
 }
 
-html {
-    --scrollbarBG: var(--tertiary-colour);
-    --thumbBG:var(--primary-colour);
-  }
-  body::-webkit-scrollbar {
-    width: 4px;
-  }
-  body {
-    scrollbar-width: thin;
-    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
-  }
-  body::-webkit-scrollbar-track {
-    background: var(--scrollbarBG);
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: var(--thumbBG) ;
-    border-radius: 9px;
-    border: 1px solid var(--scrollbarBG);
-  }
-  
+.flex-container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--background-colour);
+}
+.flex-item {
+    border: 2px solid var(--primary-colour);
+    background-color: var(--secondary-colour);
+    color: var(--primary-colour);
+    min-height: 210px;
+    display:grid;
+    align-items:flex-end;
+    flex-basis: calc(40% - 1em);
+    padding: 0 0px 0px 0;
+    margin: 1.7em;
+    text-decoration: none;
+}
+.flex-item h2 {
+    background-color: var(--secondary-colour);
+    padding: .5em 0 2em 1em;
+}
+
+.flex-item:first-child {
+    min-height: 290px;
+    flex-basis: 55%;
+}
+.first {
+    background-image: url(../images/background-img.png);
+}
+.second {
+    background-image: url(../images/background-img.png);
+}
+
+.third {
+    background-image: url(../images/background-img.png);
+}
+.forth {
+    background-image: url(../images/background-img.png);
+}
+.fifth {
+    background-image: url(../images/background-img.png);
+}
