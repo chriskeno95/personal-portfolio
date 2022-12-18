@@ -6,21 +6,13 @@ This is my personal porfolio that i have created for the second week of the fron
 
 Through the process of this project, i have learned a little about Figma (which i have used to make my wireframe), i would usually use illustrator to create wireframes however i decided to try something new. i have also learned how to use code to design default page elements such as the browsers scroll bar to get it to look how i wanted.
 
-The reason i have decided to stray from the briefs design is to create something that stands out more, has abit more of my personality and allows me to test my knowledge.It also makes it abit more enjoyable for me as i want to get back to my design roots. 
+The reason i have decided to stray from the briefs design is to create something that stands out more, has abit more of my personality and allows me to test my knowledge. It also makes it abit more enjoyable for me as i want to get back to my design roots. 
 
 While completing this project i struggled with the responsiveness of the webpage and this is something i will work on as the bootcamp progresses. 
 
-to
-Lastly, if your project is deployed, include a link to the deployed application here.
-
-If you're new to Markdown, read the GitHub guide on [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
-
-If you need an example of a good README, check out [the VSCode repository](https://github.com/microsoft/vscode).
 
 
-## Table of Contents (Optional)
-
-If your README is very long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents
 
 * [Installation](#installation)
 * [Wireframe](#wireframe)
